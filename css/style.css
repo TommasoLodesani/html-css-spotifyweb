@@ -24,13 +24,63 @@ main{
 }
 
 
+/* left side */
+
 #left{
     width: 15%;
-
-    /* debug */
     height: calc(100vh - 100px);
-    background-color: red;
+    background-color: #000000;
 }
+
+
+#left .logo{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#left .icons-menu ul{
+    padding-left: 15px;
+}
+
+#left .icons-menu ul li{
+    padding: 10px 0;
+}
+
+#left .icons-menu ul li a{
+    color: #717171;
+}
+
+#left h5{
+    color: white;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+#left .add-playlist{
+    color: #717171;
+    display: flex;
+    align-items: center;
+}
+
+#left .add{
+    color: #717171;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 40px;
+}
+
+#left .add span{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* right side */
 
 #right{
     width: 85%;
@@ -49,9 +99,10 @@ main{
     background-color: aqua;
 }
 
+
+
+
 /* footer */
-
-
 
 footer{
     width: 100%;
@@ -119,10 +170,16 @@ footer .col-sx ul li .folder{
 
 footer .col-cen .player ul a{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     padding: 0 10px;
     
 }
+
+footer .col-cen .player ul .play{
+    font-size: 35px;
+
+}
+
 
 /* footer colonna destra */
 
