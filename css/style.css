@@ -21,6 +21,7 @@ a {
 
 main {
     display: flex;
+    margin-bottom: 80px;
 }
 
 
@@ -108,8 +109,8 @@ main {
 }
 
 #left .inst-utent {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 85px;
     background-color: black;
     padding-bottom: 20px;
 }
