@@ -189,81 +189,6 @@ font-size: 12px;
 }
 
 
-@media screen and (max-width: 552px) {
-
-    #left{
-        width: 50px;
-    }
-
-    #left .logo .img-logo-big{
-        display: none;
-    }
-
-    #left .logo .img-logo-small{
-        display: block;
-    }
-
-    #left .logo{
-        padding: 12px;
-    }
-
-    #left .icons-menu .container .text,
-    #left h5, #left .add-playlist, #left .playlist, #left .icons-menu.bottom hr{
-        display: none;
-    }
-
-    #left .icons-menu .container{
-        padding-left: 12px;
-    }
-
-    #left .icons-menu.bottom .arrow{
-        padding-left: 6px;
-    }
-
-
-    
-}
-
-
-
-
-
-
-
-/* #left .installa {
-    margin: 10px 0;
-}
-
-#left .installa a {
-    padding-left: 20px;
-    font-size: 12px;
-}
-
-#left hr {
-    width: 80%;
-    margin-left: 15px;
-}
-
-#left .utente {
-    padding-left: 20px;
-    margin-top: 10px
-}
-
-#left .utente a {
-    color: white;
-    font-size: 14px;
-}
-
-#left .utente a i {
-    font-size: 20px;
-} */
-
-
-
-
-
-
-
 
 /* right side */
 
@@ -271,19 +196,6 @@ font-size: 12px;
     /* width: 84%; */
     max-width: calc(100% - 232px);
 }
-
-/* @media screen and (min-width: 878px) { 
-    
-    #right{
-        max-width: 70%;
-
-    }
-
-    #main-right{
-        max-width: 70%;
-    }
-    
-} */
 
 #main-right {
     max-width: 100%;
@@ -328,12 +240,13 @@ font-size: 12px;
 
 #main-right nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #main-right nav ul li {
     padding: 15px 11px;
-    /* width: 112px;
-    height: 49px; */
+    min-width: 112px;
     position: relative;
 }
 
@@ -397,6 +310,7 @@ font-size: 12px;
     max-width: calc((100% - 70px) / 6);
     height: 100%;
     text-align: center;
+    min-width: 166.167px
 }
 
 #main-right .container .cont-img{
@@ -453,12 +367,6 @@ font-size: 12px;
 #main-right .container .cont-img.round img {
     border-radius: 50%;
 }
-
-
-
-
-
-
 
 
 
@@ -622,4 +530,47 @@ footer .line.short {
     width: 110px;
     margin-left: 10px;
 
+}
+
+
+
+
+@media screen and (max-width: 552px) {
+
+    #left{
+        width: 50px;
+    }
+
+    #left .logo .img-logo-big{
+        display: none;
+    }
+
+    #left .logo .img-logo-small{
+        display: block;
+    }
+
+    #left .logo{
+        padding: 12px;
+    }
+
+    #left .icons-menu .container .text,
+    #left h5, #left .add-playlist, #left .playlist, #left .icons-menu.bottom hr{
+        display: none;
+    }
+
+    #left .icons-menu .container{
+        padding-left: 12px;
+    }
+
+    #left .icons-menu.bottom .arrow{
+        padding-left: 6px;
+    }
+
+    #right {
+    
+        max-width: calc(100% - 50px);
+    }
+
+
+    
 }
