@@ -199,7 +199,7 @@ font-size: 12px;
 
 #main-right {
     max-width: 100%;
-    /* height: calc(100vh - 170px); */
+    height: calc(100vh - 170px);
     overflow-y: auto;
     background-color: #141922;
 }
@@ -573,5 +573,15 @@ footer .line.short {
     }
    
 }
+
+
+/* @media screen and (max-widht:1278px) {
+   
+    #main-right {
+        height: calc(100vh - 170px);
+      
+    }
+    
+} */
  
 
