@@ -55,56 +55,40 @@ main {
     color: white;
 }
 
-
-
-#left .icons-menu .icon {
-    padding-top: 7px;
-    padding-left: 20px;
+#left .icons-menu .container{
+    width: 100%;
     display: flex;
+    padding-left: 20px;
+    margin-top: 2px;
     align-items: center;
-}
-
-
-
-
-
-#left .icons-menu .cerca {
-    margin: 5px 0;
-}
-
-
-#left .icons-menu a {
-    font-size: 22px;
-}
-
-
-#left .icons-menu .text {
-    font-size: 13px;
 
 }
 
-#left .icons-menu .text.home {
-    margin-left: 8px;
-}
-
-#left .icons-menu .text.cerca {
-    margin-left: 11px;
-}
-
-#left .icons-menu .text.libre {
-    margin-left: 14px;
-}
-
-
-
-#left .icons-menu .home.here a {
-    color: white;
+#left .icons-menu .container.home.here{
     border-left: solid 3px yellowgreen;
     padding-left: 16px;
+}
+
+
+#left .icons-menu .container.search{
+    margin: 7px 0;
+}
+
+#left .icons-menu .container img{
+    width: auto;
+    height: 25px;
+}
+
+#left .icons-menu .container .text{
+    padding-left: 5px;
 
 }
 
 
+#left .icons-menu .container .text a{
+    font-size: 13px;
+    
+}
 
 #left h5 {
     color: white;
@@ -122,12 +106,25 @@ main {
     margin-bottom: 5px;
 }
 
+#left .add{
+    display:flex;
+    align-items: center;
+}
+
+
+
 #left .add i {
     color: #717171;
     padding-left: 20px;
     padding-right: 10px;
     font-size: 40px;
+   
 }
+
+#left .add i:hover{
+    color: white;
+}
+
 
 #left .add span {
     font-size: 15px;
@@ -147,15 +144,51 @@ main {
     font-size: 13px;
 }
 
-#left .inst-utent {
+#left .icons-menu.bottom {
     position: fixed;
     bottom: 85px;
     background-color: black;
     padding-bottom: 20px;
 }
 
+#left hr {
+    width: 100%;
+    margin-left: 15px;
+}
 
-#left .installa {
+#left .container.installa{
+    margin-bottom: 10px;
+}
+
+#left .container.installa a{
+font-size: 12px;
+}
+
+#left .container.installa .text.download a{
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+#left .container.utente{
+    margin-top: 10px;
+}
+
+#left .container.utente .user-logo{
+    font-size: 25px;
+}
+
+#left .container.utente .text a{
+    font-size: 14px;
+   
+}
+
+
+
+
+
+
+
+/* #left .installa {
     margin: 10px 0;
 }
 
@@ -181,7 +214,7 @@ main {
 
 #left .utente a i {
     font-size: 20px;
-}
+} */
 
 
 
@@ -194,9 +227,28 @@ main {
 
 #right {
     /* width: 84%; */
-    width: calc(100% - 232px);
+    max-width: calc(100% - 232px);
 }
 
+/* @media screen and (min-width: 878px) { 
+    
+    #right{
+        max-width: 70%;
+
+    }
+
+    #main-right{
+        max-width: 70%;
+    }
+    
+} */
+
+#main-right {
+    max-width: 100%;
+    /* height: calc(100vh - 170px); */
+    overflow-y: auto;
+    background-color: #141922;
+}
 #head-right {
     width: 100%;
     height: 90px;
@@ -220,15 +272,10 @@ main {
 }
 
 #head-right .btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-#main-right {
-    width: 100%;
-    /* height: calc(100vh - 170px); */
-    overflow-y: auto;
-    background-color: #141922;
-}
+
 
 #main-right nav {
     display: flex;
@@ -243,8 +290,8 @@ main {
 
 #main-right nav ul li {
     padding: 15px 11px;
-    width: 112px;
-    height: 49px;
+    /* width: 112px;
+    height: 49px; */
     position: relative;
 }
 
@@ -305,7 +352,7 @@ main {
 }
 
 #main-right .container {
-    width: calc((100% - 70px) / 6);
+    max-width: calc((100% - 70px) / 6);
     height: 100%;
     text-align: center;
 }
@@ -500,7 +547,10 @@ footer .line {
     background-color: white;
     border-radius: 50px;
     margin: 0 23px;
+    
 }
+
+
 
 footer .col-cen .time-line .timer {
     font-size: 10px;
